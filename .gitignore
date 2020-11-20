@@ -1,0 +1,9 @@
+*.a
+*.d
+*.o
+*.os
+*.iso
+*.bin
+*.out
+*.kernel
+isodir
