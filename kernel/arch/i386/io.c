@@ -5,7 +5,7 @@
 #include <kernel/io.h>
 #include <kernel/tty.h>
 
-int kputchar(int ic) {
+int putchark(int ic) {
         char c = ic;
         terminal_write(&c, sizeof(c));
         return ic;
@@ -14,12 +14,12 @@ int kputchar(int ic) {
 static bool print(const char* data, size_t length) {
         const unsigned char* bytes = (const unsigned char*) data;
         for (size_t i = 0; i < length; i++)
-                if (kputchar(bytes[i]) == EOF)
+                if (putchark(bytes[i]) == EOF)
                         return false;
         return true;
 }
 
-int kprint(const char* restrict format, ...) {
+int printk(const char* restrict format, ...) {
         va_list parameters;
         va_start(parameters, format);
 
@@ -86,6 +86,6 @@ int kprint(const char* restrict format, ...) {
         return written;
 }
 
-int kputs(const char *string) {
-        return kprint("%s\n", string);
+int printlnk(const char *string) {
+        return printk("%s\n", string);
 }

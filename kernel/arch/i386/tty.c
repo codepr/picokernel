@@ -32,15 +32,15 @@ void terminal_putchar(char c) {
         if (++terminal_column == VGA_WIDTH) {
                 terminal_column = 0;
                 if (++terminal_row == VGA_HEIGHT)
-                    terminal_row = 0;
+                        terminal_row = 0;
         }
 }
 
 void terminal_write(const char *data, usize size) {
-    for (usize i = 0; i < size; i++)
-        terminal_putchar(data[i]);
+        for (usize i = 0; i < size; i++)
+                terminal_putchar(data[i]);
 }
 
 void terminal_writestring(const char *data) {
-    terminal_write(data, strlen(data));
+        terminal_write(data, strlen(data));
 }

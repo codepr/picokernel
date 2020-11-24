@@ -3,8 +3,8 @@
 
 #define EOF (-1)
 
-int kprint(const char *__restrict, ...);
-int kputchar(int);
-int kputs(const char *);
+int printk(const char *__restrict, ...);
+int putchark(int);
+int printlnk(const char *);
 
 #endif
