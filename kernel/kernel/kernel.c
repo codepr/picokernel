@@ -1,9 +1,8 @@
 #include <kernel/tty.h>
+#include <kernel/io.h>
 
 void kernel_main(void) {
     terminal_initialize();
-    terminal_putchar('A');
-    terminal_putchar('B');
-    terminal_putchar('C');
+    kprint("Hello\n");
 }
 

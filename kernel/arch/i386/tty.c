@@ -22,7 +22,7 @@ void terminal_initialize(void) {
         }
 }
 
-void terminal_putchar_at(u8 c, u8 color, usize x, usize y) {
+void terminal_putchar_at(i8 c, u8 color, usize x, usize y) {
         const usize index = y * VGA_WIDTH + x;
         terminal_buffer[index] = vga_entry(c, color);
 }
