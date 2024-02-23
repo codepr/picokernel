@@ -26,6 +26,9 @@ LIBK_CPPFLAGS:=$(LIBK_CPPFLAGS)
 
 FREEOBJS=\
 string/strlen.o \
+string/memset.o \
+string/memcpy.o \
+string/memmove.o \
 
 OBJS=\
 $(FREEOBJS) \

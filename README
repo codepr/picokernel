@@ -2,3 +2,9 @@ Picokernel
 ==========
 
 Utterly trivial OS kernel. Sandbox playground.
+
+Resources
+
+- Build a cross compiler - https://wiki.osdev.org/GCC_Cross-Compiler
+- Include it in $HOME - export PATH="$HOME/opt/cross/bin:$PATH"
+- ./configure.sh && ./build.sh && ./qemu.sh
