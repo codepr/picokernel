@@ -29,6 +29,10 @@ string/strlen.o \
 string/memset.o \
 string/memcpy.o \
 string/memmove.o \
+stdio/puts.o \
+stdio/putchar.o \
+stdio/printf.o \
+stdlib/abort.o \
 
 OBJS=\
 $(FREEOBJS) \
